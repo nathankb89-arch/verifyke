@@ -1,5 +1,6 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
+import Navbar from '../Components/Navbar'
+import Footer from '../Components/Footer'
 
 function LayoutPage({ children }) {
   return (
@@ -9,6 +10,8 @@ function LayoutPage({ children }) {
       <div className='p-6'>
         {children}
       </div>
+
+      <Footer/>
     </div>
   )
 }
