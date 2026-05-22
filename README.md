@@ -1,17 +1,127 @@
-# React + Vite
+# VerifyKE
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+VerifyKE is a modern verification and authentication web application built with React and Firebase.  
+The project is designed to help users securely sign up, log in, and manage authentication with a clean and responsive user interface.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- User Login & Signup
+- Firebase Authentication
+- Google Sign-In
+- GitHub Sign-In
+- Responsive Design
+- Protected Routes
+- Modern UI with React
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# verifyke
+- React.js
+- Firebase
+- JavaScript
+- CSS
+- Vite
+
+---
+
+## Installation
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/your-username/verifyke.git
+```
+
+### 2. Open the project folder
+
+```bash
+cd verifyke
+```
+
+### 3. Install dependencies
+
+```bash
+npm install
+```
+
+### 4. Start the development server
+
+```bash
+npm run dev
+```
+
+---
+
+## Firebase Setup
+
+1. Create a project on Firebase Console  
+2. Enable:
+   - Email/Password Authentication
+   - Google Authentication
+   - GitHub Authentication
+
+3. Create a `.env` file in the root folder and add:
+
+```env
+VITE_API_KEY=your_api_key
+VITE_AUTH_DOMAIN=your_auth_domain
+VITE_PROJECT_ID=your_project_id
+VITE_STORAGE_BUCKET=your_storage_bucket
+VITE_MESSAGING_SENDER_ID=your_sender_id
+VITE_APP_ID=your_app_id
+```
+
+---
+
+## Build for Production
+
+```bash
+npm run build
+```
+
+---
+
+## Deployment
+
+You can deploy the project easily using:
+
+- Vercel
+- Netlify
+
+---
+
+## Folder Structure
+
+```bash
+src/
+ ├── components/
+ ├── pages/
+ ├── firebase.js
+ ├── App.jsx
+ └── main.jsx
+```
+
+---
+
+## Future Improvements
+
+- User Dashboard
+- Email Verification
+- Password Reset
+- Dark Mode
+- Admin Panel
+
+---
+
+## Author
+
+Created by Nathan Kiprono
+
+---
+
+## License
+
+This project is licensed under the MIT License.
